@@ -45,6 +45,7 @@ client.on('message', message => {
   let embed = new Discord.MessageEmbed().setColor("#ffe352");
   if(message.content === prefix + 'help') {
     embed.setTitle("Command List :reminder_ribbon:");
+    embed.setDescription("This Bot is made by 🐰 Bunny 🐰#6229");
     embed.addField(`${prefix}uptime + Link`, [`**\`!uptime your bot project link it keeps your bot 24 Hours running\`**`], false);
     embed.addField(`${prefix}info`, [`**\`Bot Info\`**`], false);
 	  message.channel.send(embed);
@@ -79,5 +80,7 @@ client.on('message', message => {
    });
   };
 });
+
+//Bot made by 🐰 Bunny 🐰#6229
 
 client.login(process.env.TOKEN); //token in .env file
